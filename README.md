@@ -1,6 +1,6 @@
-# JAlgoArena-UI [![Build Status](https://travis-ci.org/spolnik/JAlgoArena-UI.svg?branch=master)](https://travis-ci.org/spolnik/JAlgoArena-UI) [![GitHub release](https://img.shields.io/github/release/spolnik/jalgoarena-ui.svg)]() [![Codacy Badge](https://api.codacy.com/project/badge/Grade/42e543b317ca4633ad593fbd6e45dc1a)](https://www.codacy.com/app/jacek-spolnik/JAlgoArena-UI?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=spolnik/JAlgoArena-UI&amp;utm_campaign=Badge_Grade) [![Code Climate](https://codeclimate.com/github/spolnik/JAlgoArena-UI/badges/gpa.svg)](https://codeclimate.com/github/spolnik/JAlgoArena-UI) [![codecov](https://codecov.io/gh/spolnik/JAlgoArena-UI/branch/master/graph/badge.svg)](https://codecov.io/gh/spolnik/JAlgoArena-UI)
+# JAlgoArena-UI [![Build Status](https://travis-ci.org/klaudia-janiec/JAlgoArena-UI.svg?branch=master)](https://travis-ci.org/klaudia-janiec/JAlgoArena-UI) [![GitHub release](https://img.shields.io/github/release/klaudia-janiec/jalgoarena-ui.svg)]() [![Codacy Badge](https://api.codacy.com/project/badge/Grade/42e543b317ca4633ad593fbd6e45dc1a)](https://www.codacy.com/app/jacek-spolnik/JAlgoArena-UI?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=spolnik/JAlgoArena-UI&amp;utm_campaign=Badge_Grade) [![Code Climate](https://codeclimate.com/github/spolnik/JAlgoArena-UI/badges/gpa.svg)](https://codeclimate.com/github/spolnik/JAlgoArena-UI) [![codecov](https://codecov.io/gh/spolnik/JAlgoArena-UI/branch/master/graph/badge.svg)](https://codecov.io/gh/spolnik/JAlgoArena-UI)
 
-JAlgoArena UI is frontent for JAlgoArena services. 
+JAlgoArena UI is frontent for JAlgoArena services.
 
 - [Introduction](#introduction)
 - [Components](#components)
@@ -60,6 +60,6 @@ There are two ways to run it - from sources or from binaries.
 - the command is `npm run pm2start`
 
 ## Notes
-- [Travis Builds](https://travis-ci.org/spolnik)
+- [Travis Builds](https://travis-ci.org/klaudia-janiec)
 
 ![Component Diagram](https://github.com/spolnik/JAlgoArena/raw/master/design/JAlgoArena_Logo.png)

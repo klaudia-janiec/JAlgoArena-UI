@@ -14,7 +14,7 @@ deploy:
   file: ./dist/JAlgoArena-UI-*.zip
   skip_cleanup: true
   on:
-    repo: spolnik/JAlgoArena-UI
+    repo: klaudia-janiec/JAlgoArena-UI
     tags: true
 addons:
     code_climate:
