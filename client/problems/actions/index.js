@@ -56,7 +56,7 @@ export function judgeCode(sourceCode: string, problemId: string, userId: string,
             .then(response => response.json())
             .then(json => {
                 if ((json: Error).error) {
-                    dispatch(setErrorMessage("Cannot connect to Judge Service"));
+                    dispatch(setErrorMessage(`Cannot connect to Judge Service: ${JUDGE_SERVER_URL}`));
                 } else {
                     dispatch(judgeResultReceived((json: JudgeResponse)));
                     if (isAdmin) {
@@ -67,7 +67,7 @@ export function judgeCode(sourceCode: string, problemId: string, userId: string,
                     dispatch(fetchRanking());
                 }
             })
-            .catch(error => dispatch(setErrorMessage("Cannot connect to Judge Service")));
+            .catch(error => dispatch(setErrorMessage(`Cannot connect to Judge Service: ${JUDGE_SERVER_URL}`)));
     };
 
 }
@@ -133,12 +133,12 @@ export function fetchProblems() {
             .then(response => response.json())
             .then(json => {
                 if ((json: Error).error) {
-                    dispatch(setErrorMessage("Cannot connect to Judge Service"));
+                    dispatch(setErrorMessage(`Cannot connect to Judge Service: ${JUDGE_SERVER_URL}`));
                 } else {
                     dispatch(setProblems((json: Array<Problem>)))
                 }
             })
-            .catch(error => dispatch(setErrorMessage("Cannot connect to Judge Service")));
+            .catch(error => dispatch(setErrorMessage(`Cannot connect to Judge Service: ${JUDGE_SERVER_URL}`)));
     };
 }
 
@@ -168,12 +168,12 @@ export function fetchRawProblems() {
             .then(response => response.json())
             .then(json => {
                 if ((json: Error).error) {
-                    dispatch(setErrorMessage("Cannot connect to Problems Service"));
+                    dispatch(setErrorMessage(`Cannot connect to Problems Service: ${PROBLEMS_SERVER_URL}`));
                 } else {
                     dispatch(setRawProblems((json: Array<RawProblem>)));
                 }
             })
-            .catch(error => dispatch(setErrorMessage("Cannot connect to Problems Service")));
+            .catch(error => dispatch(setErrorMessage(`Cannot connect to Problems Service: ${PROBLEMS_SERVER_URL}`)));
     };
 }
 

@@ -25,12 +25,12 @@ export function fetchProblemRanking(problemId: string) {
             .then(response => response.json())
             .then(json => {
                 if (json.error) {
-                    dispatch(setErrorMessage("Cannot connect to Submissions Service"))
+                    dispatch(setErrorMessage(`Cannot connect to Submissions Service  ${SUBMISSIONS_SERVER_URL}`))
                 } else {
                     dispatch(setProblemRanking((json: Array<ProblemRankingEntry>)))
                 }
             })
-            .catch(error => dispatch(setErrorMessage("Cannot connect to Submissions Service")));
+            .catch(error => dispatch(setErrorMessage(`Cannot connect to Submissions Service  ${SUBMISSIONS_SERVER_URL}`)));
     };
 }
 
@@ -54,12 +54,12 @@ export function fetchRanking() {
             .then(response => response.json())
             .then(json => {
                 if (json.error) {
-                    dispatch(setErrorMessage("Cannot connect to Submissions Service"))
+                    dispatch(setErrorMessage(`Cannot connect to Submissions Service  ${SUBMISSIONS_SERVER_URL}`))
                 } else {
                     dispatch(setRanking((json: Array<RankingEntry>)))
                 }
             })
-            .catch(error => dispatch(setErrorMessage("Cannot connect to Submissions Service")));
+            .catch(error => dispatch(setErrorMessage(`Cannot connect to Submissions Service  ${SUBMISSIONS_SERVER_URL}`)));
     };
 }
 
