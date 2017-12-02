@@ -59,6 +59,12 @@ There are two ways to run it - from sources or from binaries.
 - the recommended way to run JAlgoArena UI is to use [PM2](http://pm2.keymetrics.io/)
 - the command is `npm run pm2start`
 
+### Docker
+`$ docker build -t 'jalgoarena/jalgoarena-ui' .`
+`$ docker images`
+`$ docker run -p 3000:3000 jalgoarena/jalgoarena-ui`
+
+
 ## Notes
 - [Travis Builds](https://travis-ci.org/klaudia-janiec)
 
